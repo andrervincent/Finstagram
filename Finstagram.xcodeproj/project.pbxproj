@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ABAD725240E158C00285FD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAD724240E158C00285FD5 /* LoginViewController.swift */; };
+		1ABAD727240E159E00285FD5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAD726240E159E00285FD5 /* FeedViewController.swift */; };
 		1AE1445A240DC398008F2C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE14459240DC398008F2C53 /* AppDelegate.swift */; };
-		1AE1445C240DC398008F2C53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1445B240DC398008F2C53 /* ViewController.swift */; };
 		1AE1445F240DC398008F2C53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE1445D240DC398008F2C53 /* Main.storyboard */; };
 		1AE14461240DC39A008F2C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE14460240DC39A008F2C53 /* Assets.xcassets */; };
 		1AE14464240DC39A008F2C53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE14462240DC39A008F2C53 /* LaunchScreen.storyboard */; };
@@ -39,9 +40,10 @@
 /* Begin PBXFileReference section */
 		0A656A84CF2806DF105D538A /* Pods-Finstagram-FinstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finstagram-FinstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Finstagram-FinstagramUITests/Pods-Finstagram-FinstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0AC0246AF079E52BEDFBDA2A /* Pods-Finstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finstagram.release.xcconfig"; path = "Target Support Files/Pods-Finstagram/Pods-Finstagram.release.xcconfig"; sourceTree = "<group>"; };
+		1ABAD724240E158C00285FD5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1ABAD726240E159E00285FD5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1AE14456240DC398008F2C53 /* Finstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE14459240DC398008F2C53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AE1445B240DC398008F2C53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AE1445E240DC398008F2C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AE14460240DC39A008F2C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AE14463240DC39A008F2C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,11 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				1AE14459240DC398008F2C53 /* AppDelegate.swift */,
-				1AE1445B240DC398008F2C53 /* ViewController.swift */,
 				1AE1445D240DC398008F2C53 /* Main.storyboard */,
 				1AE14460240DC39A008F2C53 /* Assets.xcassets */,
 				1AE14462240DC39A008F2C53 /* LaunchScreen.storyboard */,
 				1AE14465240DC39A008F2C53 /* Info.plist */,
+				1ABAD724240E158C00285FD5 /* LoginViewController.swift */,
+				1ABAD726240E159E00285FD5 /* FeedViewController.swift */,
 			);
 			path = Finstagram;
 			sourceTree = "<group>";
@@ -162,7 +165,6 @@
 				E4EB422E5DF6FC3B110470A3 /* Pods-FinstagramTests.debug.xcconfig */,
 				97C26158A47BB0B27A9503D8 /* Pods-FinstagramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -405,7 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE1445C240DC398008F2C53 /* ViewController.swift in Sources */,
+				1ABAD725240E158C00285FD5 /* LoginViewController.swift in Sources */,
+				1ABAD727240E159E00285FD5 /* FeedViewController.swift in Sources */,
 				1AE1445A240DC398008F2C53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
