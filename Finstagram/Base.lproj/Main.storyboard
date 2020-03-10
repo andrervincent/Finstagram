@@ -75,8 +75,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="passwordTextField" destination="ggd-Up-9WX" id="Ykz-KH-sXk"/>
-                        <outlet property="usernameTextField" destination="C8V-Xc-IEh" id="gdO-7m-hE2"/>
+                        <outlet property="passwordTextField" destination="ggd-Up-9WX" id="0mE-YV-5ts"/>
+                        <outlet property="usernameTextField" destination="C8V-Xc-IEh" id="tuj-XS-qfT"/>
                         <segue destination="eT0-u2-XeO" kind="presentation" identifier="loginSegue" id="nMi-3e-jpZ"/>
                     </connections>
                 </viewController>
@@ -88,17 +88,117 @@
         <scene sceneID="gLE-6C-nHa">
             <objects>
                 <viewController id="K8a-XV-Ff0" customClass="FeedViewController" customModule="Finstagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uEo-wS-OGX">
+                    <view key="view" contentMode="scaleToFill" id="uEo-wS-OGX" customClass="FeedView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NqF-xe-fga">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostViewCell" rowHeight="281" id="HL1-rr-2De" customClass="PostViewCell" customModule="Finstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="281"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HL1-rr-2De" id="reR-0k-lTI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="280.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHC-kB-aIh">
+                                                    <rect key="frame" x="20" y="11" width="374" height="198"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9S-XD-Wnl">
+                                                    <rect key="frame" x="45" y="217" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wow, I love photos!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-em-Iel">
+                                                    <rect key="frame" x="116" y="217" width="148" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="oYv-em-Iel" id="d2Q-C7-LE6"/>
+                                            <outlet property="photoView" destination="LHC-kB-aIh" id="N5u-CT-m9s"/>
+                                            <outlet property="usernameLabel" destination="H9S-XD-Wnl" id="qo3-dG-jld"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GUC-jd-IKh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ihk-Ck-jUo"/>
+                    <navigationItem key="navigationItem" id="Ihk-Ck-jUo">
+                        <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="dwA-hE-PkM">
+                            <connections>
+                                <segue destination="0eK-VX-6zM" kind="presentation" id="niA-cV-8GX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TableView" destination="NqF-xe-fga" id="hCr-5E-0ol"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dR-8r-2rk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1878.2608695652175" y="120.53571428571428"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="g12-dQ-edS">
+            <objects>
+                <viewController id="0eK-VX-6zM" customClass="CameraViewController" customModule="Finstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mDx-in-5Tq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-Eb-pwX">
+                                <rect key="frame" x="20" y="58" width="374" height="392"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mto-cn-fOS" appends="YES" id="sVj-pp-JOJ"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMt-uU-BeZ">
+                                <rect key="frame" x="20" y="495" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9y6-Jd-w0K">
+                                <rect key="frame" x="20" y="542" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="0eK-VX-6zM" eventType="touchUpInside" id="urq-Lb-Lqj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3xO-DB-Qdu"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentField" destination="oMt-uU-BeZ" id="1a0-Z5-eeD"/>
+                        <outlet property="imageView" destination="dhl-Eb-pwX" id="9xK-tQ-c69"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVO-c1-VkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mto-cn-fOS">
+                    <connections>
+                        <action selector="triggerPhoto:" destination="0eK-VX-6zM" id="K6B-s2-EL0"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2802.898550724638" y="120.53571428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JTV-gM-59F">
@@ -120,6 +220,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image_placeholder" width="375" height="375"/>
+        <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
     </resources>
 </document>

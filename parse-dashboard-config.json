@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "serverURL": "https://nameless-ridge-54081.herokuapp.com/",
+      "appId": "Parstagram",
+      "masterKey": "myMasterKey",
+      "appName": "MyApp"
+    }
+  ]
+}

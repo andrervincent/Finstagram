@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A292F1C24172E4C00ACB28E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A292F1B24172E4C00ACB28E /* CameraViewController.swift */; };
+		1A292F1E24173B4E00ACB28E /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A292F1D24173B4E00ACB28E /* PostViewCell.swift */; };
 		1ABAD725240E158C00285FD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAD724240E158C00285FD5 /* LoginViewController.swift */; };
 		1ABAD727240E159E00285FD5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAD726240E159E00285FD5 /* FeedViewController.swift */; };
 		1AE1445A240DC398008F2C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE14459240DC398008F2C53 /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		0A656A84CF2806DF105D538A /* Pods-Finstagram-FinstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finstagram-FinstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Finstagram-FinstagramUITests/Pods-Finstagram-FinstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0AC0246AF079E52BEDFBDA2A /* Pods-Finstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finstagram.release.xcconfig"; path = "Target Support Files/Pods-Finstagram/Pods-Finstagram.release.xcconfig"; sourceTree = "<group>"; };
+		1A292F1B24172E4C00ACB28E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		1A292F1D24173B4E00ACB28E /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
 		1ABAD724240E158C00285FD5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1ABAD726240E159E00285FD5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1AE14456240DC398008F2C53 /* Finstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,8 @@
 				1AE14465240DC39A008F2C53 /* Info.plist */,
 				1ABAD724240E158C00285FD5 /* LoginViewController.swift */,
 				1ABAD726240E159E00285FD5 /* FeedViewController.swift */,
+				1A292F1B24172E4C00ACB28E /* CameraViewController.swift */,
+				1A292F1D24173B4E00ACB28E /* PostViewCell.swift */,
 			);
 			path = Finstagram;
 			sourceTree = "<group>";
@@ -408,8 +414,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ABAD725240E158C00285FD5 /* LoginViewController.swift in Sources */,
+				1A292F1C24172E4C00ACB28E /* CameraViewController.swift in Sources */,
 				1ABAD727240E159E00285FD5 /* FeedViewController.swift in Sources */,
 				1AE1445A240DC398008F2C53 /* AppDelegate.swift in Sources */,
+				1A292F1E24173B4E00ACB28E /* PostViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
