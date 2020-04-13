@@ -203,7 +203,7 @@
         <!--Navigation Controller-->
         <scene sceneID="JTV-gM-59F">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eT0-u2-XeO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DashViewController" automaticallyAdjustsScrollViewInsets="NO" id="eT0-u2-XeO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wOP-e2-uVd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

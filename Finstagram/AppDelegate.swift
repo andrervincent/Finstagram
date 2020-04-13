@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://nameless-ridge-54081.herokuapp.com/parse"
             })
         )
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let DashViewController = main.instantiateInitialViewController(withIdentifier: "DashViewController")
+        }
         // Override point for customization after application launch.
         return true
     }

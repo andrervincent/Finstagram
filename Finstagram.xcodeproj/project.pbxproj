@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A292F1C24172E4C00ACB28E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A292F1B24172E4C00ACB28E /* CameraViewController.swift */; };
 		1A292F1E24173B4E00ACB28E /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A292F1D24173B4E00ACB28E /* PostViewCell.swift */; };
+		1A3C58F924440AF6005998CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3C58F824440AF6005998CF /* Default-568h@2x.png */; };
 		1ABAD725240E158C00285FD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAD724240E158C00285FD5 /* LoginViewController.swift */; };
 		1ABAD727240E159E00285FD5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABAD726240E159E00285FD5 /* FeedViewController.swift */; };
 		1AE1445A240DC398008F2C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE14459240DC398008F2C53 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		0AC0246AF079E52BEDFBDA2A /* Pods-Finstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finstagram.release.xcconfig"; path = "Target Support Files/Pods-Finstagram/Pods-Finstagram.release.xcconfig"; sourceTree = "<group>"; };
 		1A292F1B24172E4C00ACB28E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		1A292F1D24173B4E00ACB28E /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
+		1A3C58F824440AF6005998CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1ABAD724240E158C00285FD5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1ABAD726240E159E00285FD5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1AE14456240DC398008F2C53 /* Finstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 		1AE1444D240DC398008F2C53 = {
 			isa = PBXGroup;
 			children = (
+				1A3C58F824440AF6005998CF /* Default-568h@2x.png */,
 				1AE14458240DC398008F2C53 /* Finstagram */,
 				1AE1446D240DC39A008F2C53 /* FinstagramTests */,
 				1AE14478240DC39A008F2C53 /* FinstagramUITests */,
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AE14464240DC39A008F2C53 /* LaunchScreen.storyboard in Resources */,
+				1A3C58F924440AF6005998CF /* Default-568h@2x.png in Resources */,
 				1AE14461240DC39A008F2C53 /* Assets.xcassets in Resources */,
 				1AE1445F240DC398008F2C53 /* Main.storyboard in Resources */,
 			);
